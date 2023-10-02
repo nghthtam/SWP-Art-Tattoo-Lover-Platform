@@ -1,7 +1,9 @@
 use [master]
+
 drop database [TattooManager]
 
 create  database [TattooManager]
+
 use [TattooManager]
 
 create Table [Role](
@@ -41,6 +43,7 @@ rating float
 create Table [Service](
 serviceID varchar(15) Primary Key,
 serviceName varchar(30),
+systemStaffID varchar(15) Foreign Key References [User](userID),
 serviceDetail varchar(200),
 [status] bit,
 )
@@ -57,6 +60,7 @@ create Table [Studio_Service](
 studioServiceID varchar(15) Primary Key,
 studioID varchar(15) Foreign Key References [Studio](studioID),
 sereviceID varchar(15) Foreign Key References [Service](serviceID),
+studioStaffID varchar(15) Foreign Key References [User](userID),
 imgID varchar(15) Foreign Key References [Image](imgID),
 price float,
 [status] bit
@@ -75,6 +79,8 @@ create Table [Booking](
 bookingID varchar(15) Primary Key,
 userID varchar(15) Foreign Key References [User](userID),
 studioID varchar(15) Foreign Key References [Studio](studioID),
+artistID varchar(15) Foreign Key REferences [User](userID),
+staffID varchar(15) Foreign Key References [User](userID),
 slotID varchar(15) Foreign Key References [Slot](slotID),
 [description] varchar(300),
 currentDate date,
@@ -88,5 +94,7 @@ bookingID varchar(15) Foreign Key References [Booking](bookingID),
 studioServiceID varchar(15) Foreign Key References [Studio_Service](studioServiceID)
 )
 
+Alter Table [User]
+Add studioID varchar(15) Foreign Key References [Studio](studioID)
 
 
