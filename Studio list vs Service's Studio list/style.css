@@ -1,0 +1,301 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;
+}
+
+.show {
+    display: block !important;
+}
+
+/*Header*/
+
+.header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 101px;
+    flex-shrink: 0;
+    background: #000;
+    z-index: 1;
+}
+
+
+.header .btn-logo {
+    margin: 30px 70px 0 50px;
+    padding: 0 35px 5px 10px;
+    width: 54.567px;
+    height: 35px;
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.header .btn-logo:hover {
+    background-color: #D9D9D9;
+    color: black;
+}
+
+.header .input-search {
+    width: 786px;
+    height: 42px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #FFF;
+    margin-top: 25px;
+    margin-left: 140px;
+}
+
+.header input::placeholder {
+    padding-left: 10px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header .btn-notification {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 50px;
+    color: white;
+    text-decoration: none;
+    height: max-content;
+
+}
+
+.header .btn-signupstudio {
+    margin-top: 10px;
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    height: max-content;
+}
+
+.header .btn-notification:hover,
+.header .btn-signupstudio:hover {
+    text-decoration: underline;
+}
+
+
+.header .avatar-item {
+    margin-top: 35px;
+    margin-left: -50px;
+}
+
+.header .avatar-img {
+    width: 50px;
+    border-radius: 50px;
+}
+
+.header .subnav-content {
+    display: none;
+}
+
+.header .subnav-content a {
+    display: block;
+    padding: 10px 10px;
+    color: white;
+    margin-left: -150px;
+    background-color: rgba(30, 30, 30, 0.5);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: lighter;
+
+}
+
+.header .subnav-content a:hover {
+    background-color: #D9D9D9;
+    color: black;
+}
+
+.header .subnav-content a:first-child {
+    border-radius: 10px 10px 0 0;
+}
+
+.header .subnav-content a:last-child {
+    border-radius: 0 0 10px 10px;
+}
+
+.header .subnav-content i {
+    padding-right: 10px;
+}
+
+
+/*Content-title*/
+
+.content-title {
+    text-align: center;
+}
+
+.content-title h1 {
+    margin: 0;
+    padding: 18px 0;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.content-title select {
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 700;
+    height: 39px;
+}
+
+.content-title option {
+    text-align: center;
+}
+
+/*Content*/
+.content {
+    display: flex;
+}
+
+/*filter*/
+
+.filter {
+    width: 320px;
+    border-radius: 16px;
+    background: #D9D9D9;
+    height: 520px;
+    margin-left: 181px;
+    margin-top: 20px;
+
+}
+
+.filter h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 8px;
+}
+
+.filter h3 {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 8px;
+    padding-left: 39px;
+}
+
+.filter .filter-option {
+    padding-bottom: 8px;
+    padding-left: 39px;
+}
+
+/*studio list*/
+
+.studio-list {
+    margin-top: 27px;
+    margin-left: 61px;
+}
+
+.studio-list .studio-item {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 708px;
+    height: 280px;
+    margin-bottom: 14px;
+}
+
+.studio-item .studio-avatar {
+    width: 200px;
+    height: 200px;
+}
+
+.studio-item .studio-avatar img {
+
+    width: 100%;
+    border-radius: 15px;
+    margin: 30px 0 38px 21px;
+}
+
+
+.studio-item .label {
+    margin: 30px 0 0 40px;
+}
+
+.studio-item .label label {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+.studio-item .studio-infor {
+    margin: 15px 0 0 98px;
+    width: 260px;
+}
+
+.studio-item .studio-infor p:first-child,
+.studio-item .studio-infor p:nth-child(4),
+.studio-item .studio-infor p:nth-child(5),
+.studio-item .studio-infor p:nth-child(6) {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.studio-item .studio-infor p:nth-child(2),
+.studio-item .studio-infor p:nth-child(3),
+.studio-item .studio-infor p:nth-child(4),
+.studio-item .studio-infor p:nth-child(5) {
+    margin-top: -11px;
+}
+
+.studio-item .studio-infor p:nth-child(6) {
+    color: #FFA800;
+}
+
+
+
+.studio-item .btn-view {
+    width: 170px;
+    height: 36px;
+    border-radius: 5px;
+    background: #1E1E1E;
+    color: white;
+    margin-left: 80px;
+}
+
+/*footer*/
+.footer {
+
+    width: 100%;
+    height: 467px;
+    background: #000;
+    display: flex;
+    color: white;
+    margin-top: 40px;
+}
+
+.footer-service,
+.footer-contact,
+.footer-address {
+    width: 33.33%;
+    margin-top: 93px;
+    text-align: center;
+}
+
+.footer h1 {
+    padding-bottom: 41px;
+}
+
+.footer p {
+    text-align: justify;
+    width: 60%;
+    padding-left: 100px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.footer i {
+    font-size: 50px;
+    margin-left: 20px;
+}

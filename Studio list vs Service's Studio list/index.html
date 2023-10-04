@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách Studio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            <a class="btn-logo" href="#">LOGO</a>
+            <input class="input-search" type="text" placeholder="Tìm kiếm" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a class="btn-notification" href="#"><i class="fa-solid fa-bell"></i> Thông báo</a>
+            <a class="btn-signupstudio" href="#">Đăng ký studio</a>
+
+            <div class="avatar-item">
+                <img onclick="drop()" class="avatar-img"
+                    src="https://th.bing.com/th/id/OIP.7Z0skq54kBfcHRPjlsvATgHaG_?pid=ImgDet&rs=1">
+                <div id="subnav-content-id" class="subnav-content">
+                    <a href="#"><i class="fa-solid fa-gear"></i>Tài khoản của tôi</a>
+                    <a href="#"><i class="fa-solid fa-calendar-days"></i>Lịch hẹn</a>
+                    <a href="#"><i class="fa-solid fa-right-from-bracket"></i>Đăng xuất</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-title">
+            <h1>DANH SÁCH TIỆM XĂM</h1>
+            <select>
+                <option value="">Sắp xếp theo: Khoảng cách (ưu tiên gần nhất)</option>
+                <option value="">Sắp xếp theo: Khoảng cách (????????????????)</option>
+                <option value="">Sắp xếp theo: Khoảng cách (################)</option>
+            </select>
+        </div>
+        <div class="content">
+            <div class="filter">
+                <form>
+                    <h2>BỘ LỌC TÌM KIẾM</h2>
+
+                    <h3>Theo dịch vụ</h3>
+
+                    <div class="filter-option">
+                        <input type="checkbox">
+                        <label>Xăm đơn xắc</label>
+                    </div>
+
+                    <div class="filter-option">
+                        <input type="checkbox">
+                        <label>Xăm màu</label>
+                    </div>
+
+                    <div class="filter-option">
+                        <input type="checkbox">
+                        <label>Cover hình</label>
+                    </div>
+
+                    <div class="filter-option">
+                        <input type="checkbox">
+                        <label>Dặm hình</label>
+                    </div>
+
+                    <div class="filter-option">
+                        <input type="checkbox">
+                        <label>Thiết kế</label>
+                    </div>
+
+                    <div class="filter-option">
+                        <input type="checkbox">
+                        <label>Xăm che sẹo</label>
+                    </div>
+
+                    <h3>Theo khu vực</h3>
+                    <div class="filter-option">
+                        <input type="checkbox">
+                        <label>Thành phố Hồ Chí Minh</label>
+                    </div>
+
+                    <div class="filter-option">
+                        <input type="checkbox">
+                        <label>Hà Nội</label>
+                    </div>
+
+                    <h3>Theo đánh giá</h3>
+                    <div class="filter-option">
+                        <input type="radio" name="radio-feedback">
+                        <label>5 sao</label>
+                    </div>
+
+                    <div class="filter-option">
+                        <input type="radio" name="radio-feedback">
+                        <label>4 sao trở lên</label>
+                    </div>
+
+                    <div class="filter-option">
+                        <input type="radio" name="radio-feedback">
+                        <label>3 sao trở lên</label>
+                    </div>
+
+                    <div class="filter-option">
+                        <input type="radio" name="radio-feedback">
+                        <label>2 sao trở lên</label>
+                    </div>
+
+                    <div class="filter-option">
+                        <input type="radio" name="radio-feedback">
+                        <label>1 sao trở lên</label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="studio-list">
+
+                <div class="studio-item">
+                    <div class="studio-avatar">
+                        <img class="studio-avatar" src="IMG/Screenshot 2023-10-04 103931.png">
+                    </div>
+                    <div class="label">
+                        <label>Tên studio:</label>
+                        <label>Địa chỉ:</label>
+                        <label>Giờ làm việc:</label>
+                        <label>Dịch vụ:</label>
+                        <label>Giá từ:</label>
+                        <label>Đánh giá:</label>
+                    </div>
+
+                    <div class="studio-infor">
+                        <p>K Tattoo</p>
+                        <p>234 Lê Thị Riêng, Phường Phạm Ngũ Lão,  Quận 1, TPHCM</p>
+                        <p>10:30 - 22:30</p>
+                        <p>Xăm đơn sắc, Xăm màu, Dặm hình, Thiết kế, Cover hình,...</p>
+                        <p>500.000 - 30.000.000 VNĐ</p>
+                        <p>5<i class="fa-solid fa-star"></i></p>
+                        <input class="btn-view" type="submit" value="XEM BẢNG GIÁ">
+                    </div>
+
+                </div>
+
+                <div class="studio-item">
+                    <div class="studio-avatar">
+                        <img class="studio-avatar" src="IMG/Screenshot 2023-10-04 103903.png">
+                    </div>
+                    <div class="label">
+                        <label>Tên studio:</label>
+                        <label>Địa chỉ:</label>
+                        <label>Giờ làm việc:</label>
+                        <label>Dịch vụ:</label>
+                        <label>Giá từ:</label>
+                        <label>Đánh giá:</label>
+                    </div>
+
+                    <div class="studio-infor">
+                        <p>Bird Tattoo</p>
+                        <p>56 Nguyễn Văn Tăng, Phường Long Thạnh B, TP.Thủ Đức</p>
+                        <p>10:30 - 22:30</p>
+                        <p>Xăm đơn sắc, Xăm màu, Dặm hình, Thiết kế,...</p>
+                        <p>400.000 - 20.500.000 VNĐ</p>
+                        <p>5<i class="fa-solid fa-star"></i></p>
+                        <input class="btn-view" type="submit" value="XEM BẢNG GIÁ">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="footer">
+
+            <div class="footer-service">
+                <h1>Dịch vụ đặt hình xăm</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque neque lectus, aliquam a
+                    lobortis id, maximus at odio.</p>
+            </div>
+
+            <div class="footer-contact">
+                <h1>Liên hệ</h1>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook-messenger"></i>
+            </div>
+
+            <div class="footer-address">
+                <h1>Địa chỉ</h1>
+                <p>Địa chỉ: Chung Cư Hado Centrosa 200 đường 3/2, Q10, Hồ Chí Minh</p>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script>
+
+        function drop() {
+            var divs = document.getElementById("subnav-content-id");
+            divs.classList.toggle("show");
+        }
+
+    </script>
+</body>
+
+</html>
