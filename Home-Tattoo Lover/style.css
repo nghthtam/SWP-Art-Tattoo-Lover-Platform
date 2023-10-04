@@ -1,0 +1,280 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;
+}
+
+
+
+.show {
+    display: block !important;
+}
+
+/*Header*/
+
+.header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 101px;
+    flex-shrink: 0;
+    background: #000;
+    z-index: 1;
+}
+
+
+.header .btn-logo {
+    margin: 30px 70px 0 50px;
+    padding: 0 35px 5px 10px;
+    width: 54.567px;
+    height: 35px;
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.header .btn-logo:hover {
+    background-color: #D9D9D9;
+    color: black;
+}
+
+.header .input-search {
+    width: 786px;
+    height: 42px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #FFF;
+    margin-top: 25px;
+    margin-left: 140px;
+}
+
+.header input::placeholder {
+    padding-left: 10px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header .btn-notification {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 50px;
+    color: white;
+    text-decoration: none;
+    height: max-content;
+
+}
+
+.header .btn-signupstudio {
+    margin-top: 10px;
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    height: max-content;
+}
+
+.header .btn-notification:hover,
+.header .btn-signupstudio:hover {
+    text-decoration: underline;
+}
+
+
+.header .avatar-item {
+    margin-top: 35px;
+    margin-left: -50px;
+}
+
+.header .avatar-img {
+    width: 50px;
+    border-radius: 50px;
+}
+
+.header .subnav-content {
+    display: none;
+}
+
+.header .subnav-content a {
+    display: block;
+    padding: 10px 10px;
+    color: white;
+    margin-left: -150px;
+    background-color: rgba(30, 30, 30, 0.5);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: lighter;
+
+}
+
+.header .subnav-content a:hover {
+    background-color: #D9D9D9;
+    color: black;
+}
+
+.header .subnav-content a:first-child {
+    border-radius: 10px 10px 0 0;
+}
+
+.header .subnav-content a:last-child {
+    border-radius: 0 0 10px 10px;
+}
+
+.header .subnav-content i {
+    padding-right: 10px;
+}
+
+/*Slider*/
+.slider {
+    width: 100%;
+    height: 430px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider .list {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+
+.slider .list img {
+    width: 1600px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider .buttons {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider .buttons button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.slider .dots {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.slider .dots li {
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.slider .dots li.active {
+    width: 30px;
+}
+
+/*service*/
+.service {
+    width: 100%;
+}
+
+.service h1 {
+    margin-top: 30px;
+    color: #013F96;
+    font-size: 35px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+
+}
+
+.service .service-list {
+    display: flex;
+    width: 100%;
+    margin: 0 80px;
+
+}
+
+.service-list .service-item {
+    width: 14%;
+    height: 253px;
+    margin-top: 10px;
+    margin-right: 15px;
+    border: black solid 1px;
+    text-align: center;
+}
+
+.service-list .service-item img {
+    height: 187px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.service-list .service-item a {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/*footer*/
+.footer {
+
+    width: 100%;
+    height: 467px;
+    background: #000;
+    display: flex;
+    color: white;
+    margin-top: 40px;
+}
+
+.footer-service,
+.footer-contact,
+.footer-address {
+    width: 33.33%;
+    margin-top: 93px;
+    text-align: center;
+}
+
+.footer h1 {
+    padding-bottom: 41px;
+}
+
+.footer p {
+    text-align: justify;
+    width: 60%;
+    padding-left: 100px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.footer i {
+    font-size: 50px;
+    margin-left: 20px;
+}
