@@ -56,6 +56,12 @@ body {
     font-weight: bold;
 }
 
+.header .search-icon {
+    margin-top: 37px;
+    margin-left: -35px;
+    font-size: 20px;
+}
+
 .header .btn-notification {
     display: inline-block;
     margin-top: 10px;
