@@ -1,0 +1,490 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;
+}
+
+.show {
+    display: block !important;
+}
+
+/*Header*/
+
+.header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 101px;
+    flex-shrink: 0;
+    background: #000;
+    z-index: 1;
+}
+
+
+.header .btn-logo {
+    margin: 30px 70px 0 50px;
+    padding: 0 35px 5px 10px;
+    width: 54.567px;
+    height: 35px;
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.header .btn-logo:hover {
+    background-color: #D9D9D9;
+    color: black;
+}
+
+.header .input-search {
+    width: 786px;
+    height: 42px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #FFF;
+    margin-top: 25px;
+    margin-left: 140px;
+    font-size: 20px;
+}
+
+.header input::placeholder {
+    padding-left: 10px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header .btn-notification {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 50px;
+    color: white;
+    text-decoration: none;
+    height: max-content;
+
+}
+
+.header .btn-signupstudio {
+    margin-top: 10px;
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    height: max-content;
+}
+
+.header .btn-notification:hover,
+.header .btn-signupstudio:hover {
+    text-decoration: underline;
+}
+
+
+.header .avatar-item {
+    margin-top: 35px;
+    margin-left: -50px;
+}
+
+.header .avatar-img {
+    width: 50px;
+    border-radius: 50px;
+}
+
+.header .subnav-content {
+    display: none;
+}
+
+.header .subnav-content a {
+    display: block;
+    padding: 10px 10px;
+    color: white;
+    margin-left: -150px;
+    background-color: rgba(30, 30, 30, 0.5);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: lighter;
+
+}
+
+.header .subnav-content a:hover {
+    background-color: #D9D9D9;
+    color: black;
+}
+
+.header .subnav-content a:first-child {
+    border-radius: 10px 10px 0 0;
+}
+
+.header .subnav-content a:last-child {
+    border-radius: 0 0 10px 10px;
+}
+
+.header .subnav-content i {
+    padding-right: 10px;
+}
+
+/*title*/
+.title {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+    margin: 58px 0 0 68px;
+}
+
+.studio-infor {
+    display: flex;
+}
+
+.studio-img {
+    width: 600px;
+    margin-top: 37px;
+    display: flex;
+}
+
+.studio-img .img-main {
+    width: 325px;
+    height: 387px;
+    margin-left: 65px;
+}
+
+
+.studio-img .img-sub {
+    margin-left: 13px;
+}
+
+.studio-img .img-sub img {
+    width: 150px;
+    height: 180px;
+}
+
+.studio-img .img-sub img:first-child {
+    margin-bottom: 20px;
+}
+
+.studio-infor .studio-detail {
+    margin-left: 51px;
+    width: 750px;
+}
+
+.studio-infor .studio-detail h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.studio-detail .content-infor {
+    display: flex;
+}
+
+.studio-detail .content-infor label {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.studio-detail .content-infor p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 69px;
+}
+
+.studio-detail .content-infor p:last-child {
+    color: #FFA800;
+}
+
+.studio-detail .description {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    margin-top: 33px;
+}
+
+/*pop up image*/
+.container#blur.active {
+    position: relative;
+    filter: blur(5px);
+    pointer-events: none;
+    user-select: none;
+    overflow: hidden;
+}
+
+#popup-img {
+    position: absolute;
+    width: 80%;
+    margin-left: 150px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    display: none;
+    opacity: 0;
+    transition: 0.5s;
+    overflow: auto;
+    padding: 10px 10px;
+    border-radius: 15px;
+}
+
+#popup-img img {
+    width: 24%;
+}
+
+#popup-img a {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#popup-img a:hover {
+    color: red;
+}
+
+#popup-img.active {
+    top: 10%;
+    display: block;
+    opacity: 1;
+    transform: 0.5s;
+    overflow: auto;
+}
+
+
+/*service*/
+
+.service h1 {
+    margin-left: 68px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.service table {
+    margin-left: 240px;
+    width: 1050px;
+    border-spacing: 0 15px;
+}
+
+.service table thead {
+    background-color: black;
+    height: 54px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 15px;
+}
+
+.service table thead .th-service {
+    padding: 18px 0 18px 56px;
+    border: none;
+}
+
+.service table thead .th-detail {
+    padding: 18px 0 18px 56px;
+}
+
+.service table thead .th-size {
+    padding: 18px 0 18px 45px;
+}
+
+.service table thead .th-price {
+    padding: 18px 0 18px 48px;
+}
+
+.service table thead .th-amount {
+    padding: 18px 15px 18px 40px;
+}
+
+.service table thead .th-total {
+    padding: 18px 53px 18px 40px;
+}
+
+
+.service table tbody {
+    background-color: #D9D9D9;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.service table .tb-service p {
+    margin-left: 25px;
+    text-align: center;
+    padding-top: 4px;
+}
+
+.service table .tb-detail p {
+    width: 130px;
+    height: 28px;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 25px;
+    text-align: center;
+    padding-top: 4px;
+}
+
+.service table .tb-size p {
+    width: 130px;
+    height: 28px;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 25px;
+    text-align: center;
+    padding-top: 4px;
+}
+
+
+.service table .tb-price p {
+    width: 130px;
+    height: 28px;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 25px;
+    text-align: center;
+    padding-top: 4px;
+}
+
+.service table .tb-amount p {
+    width: 30px;
+    height: 28px;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 70px;
+    text-align: center;
+    padding-top: 4px;
+}
+
+.service table .tb-total p {
+    margin-left: 60px;
+}
+
+
+
+.service .total {
+    width: max-content;
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+    background-color: #FFA800;
+    margin-left: 1000px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.service .btn-book {
+    background: #000;
+    width: 219.206px;
+    height: 46px;
+    color: white;
+    border-radius: 5px;
+    margin-left: 460px;
+    margin-top: 82px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.service .btn-book i {
+    padding-right: 5px;
+}
+
+.service .btn-back {
+    background: #B32424;
+    width: 219.206px;
+    height: 46px;
+    color: white;
+    border-radius: 5px;
+    margin-left: 100px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.service .btn-back i {
+    padding-right: 5px;
+}
+
+/*form-booking*/
+.form-booking {
+    background-color: #000;
+    width: 980px;
+    height: 810px;
+    border-radius: 15px;
+    margin-left: 256px;
+}
+
+.form-booking .form-content {
+    display: block;
+    color: #FFF;
+    margin-left: 75px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.form-booking .form-content label {
+    display: block;
+}
+
+.form-booking .form-content .input-name {
+    padding-top: 33px;
+}
+
+.form-booking .form-content label {
+    padding-bottom: 16px;
+}
+
+.form-booking .form-content input {
+    width: 831.919px;
+    height: 57.922px;
+    font-size: 25px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+
+.form-content .input-describe textarea {
+    width: 831.919px;
+    height: 116px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.form-content .input-daycome input,
+.form-content .input-time select {
+    width: 243px;
+    height: 57.922px;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+
+/*footer*/
+.footer {
+
+    width: 100%;
+    height: 467px;
+    background: #000;
+    display: flex;
+    color: white;
+    margin-top: 40px;
+}
+
+.footer-service,
+.footer-contact,
+.footer-address {
+    width: 33.33%;
+    margin-top: 93px;
+    text-align: center;
+}
+
+.footer h1 {
+    padding-bottom: 41px;
+}
+
+.footer p {
+    text-align: justify;
+    width: 60%;
+    padding-left: 100px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.footer i {
+    font-size: 50px;
+    margin-left: 20px;
+}
