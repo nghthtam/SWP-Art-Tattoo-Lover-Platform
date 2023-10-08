@@ -1,0 +1,276 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;
+}
+
+.show {
+    display: block !important;
+}
+
+/*Header*/
+
+.header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 101px;
+    flex-shrink: 0;
+    background: #000;
+    z-index: 1;
+}
+
+
+.header .btn-logo {
+    margin: 30px 70px 0 50px;
+    padding: 0 35px 5px 10px;
+    width: 54.567px;
+    height: 35px;
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.header .btn-logo:hover {
+    background-color: #D9D9D9;
+    color: black;
+}
+
+.header .input-search {
+    width: 786px;
+    height: 42px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #FFF;
+    margin-top: 25px;
+    margin-left: 140px;
+    font-size: 20px;
+}
+
+.header input::placeholder {
+    padding-left: 10px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header .search-icon {
+    margin-top: 37px;
+    margin-left: -35px;
+    font-size: 20px;
+}
+
+.header .btn-notification {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 85px;
+    color: white;
+    text-decoration: none;
+    height: max-content;
+
+}
+
+.header .btn-signupstudio {
+    margin-top: 10px;
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    height: max-content;
+}
+
+.header .btn-notification:hover,
+.header .btn-signupstudio:hover {
+    text-decoration: underline;
+}
+
+
+.header .avatar-item {
+    margin-top: 35px;
+    margin-left: -50px;
+}
+
+.header .avatar-img {
+    width: 50px;
+    border-radius: 50px;
+}
+
+.header .subnav-content {
+    display: none;
+}
+
+.header .subnav-content a {
+    display: block;
+    padding: 10px 10px;
+    color: white;
+    margin-left: -150px;
+    background-color: rgba(30, 30, 30, 0.5);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: lighter;
+
+}
+
+.header .subnav-content a:hover {
+    background-color: #D9D9D9;
+    color: black;
+}
+
+.header .subnav-content a:first-child {
+    border-radius: 10px 10px 0 0;
+}
+
+.header .subnav-content a:last-child {
+    border-radius: 0 0 10px 10px;
+}
+
+.header .subnav-content i {
+    padding-right: 10px;
+}
+
+/*title*/
+.title {
+    margin-top: 37px;
+    text-align: center;
+}
+
+/*filter*/
+.filter {
+    margin: 22px 0 26px 1087px;
+}
+
+.filter select {
+    width: max-content;
+    height: 46px;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 5px;
+    background-color: #ECF2F9;
+}
+
+/*table*/
+.table table {
+    width: 1274px;
+    margin-left: 90px;
+    border-spacing: 0 15px;
+}
+
+.table thead {
+    font-size: 20px;
+    height: 77px;
+    font-weight: 700;
+    background-color: #437ECC;
+}
+
+.table thead .th-id {
+    padding-left: 20px;
+}
+
+.table thead .th-stu {
+    padding-left: 35px;
+}
+
+.table thead .th-time {
+    padding-left: 5px;
+}
+
+.table thead .th-detail,
+.table thead .th-cancel
+ {
+    padding-left: 5px;
+}
+
+.table thead .th-datebook,
+.table thead .th-datecome {
+    padding-left: 5px;
+}
+
+.table tbody {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.table tbody {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.table tbody tr {
+    background-color: #ECF2F9;
+    height: 83px;
+}
+
+.table tbody .tb-id {
+    padding-left: 30px;
+}
+
+.table tbody .tb-stu {
+    padding-left: 20px;
+}
+
+.table tbody .tb-status {
+    padding-left: 5px;
+}
+
+.table tbody .btn-detail {
+    font-size: 15px;
+    font-weight: 500;
+    color: #FFF;
+    background: #B32424;
+    width: 80px;
+    height: 33px;
+    border-radius: 5px;
+}
+
+.table tbody .btn-cancel {
+    font-size: 15px;
+    font-weight: 500;
+    color: #FFF;
+    background: black;
+    width: 83px;
+    height: 33px;
+    border-radius: 5px;
+
+}
+
+
+
+/*footer*/
+.footer {
+
+    width: 100%;
+    height: 467px;
+    background: #000;
+    display: flex;
+    color: white;
+    margin-top: 40px;
+}
+
+.footer-service,
+.footer-contact,
+.footer-address {
+    width: 33.33%;
+    margin-top: 93px;
+    text-align: center;
+}
+
+.footer h1 {
+    padding-bottom: 41px;
+}
+
+.footer p {
+    text-align: justify;
+    width: 60%;
+    padding-left: 100px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.footer i {
+    font-size: 50px;
+    margin-left: 20px;
+}
